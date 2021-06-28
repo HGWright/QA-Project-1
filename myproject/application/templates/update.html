@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+{% for i in book %}
+<h2>Update the entry for {{ i.title }}</h2>
+{% endfor %}
+<div class = 'form'>
+    <form method = 'POST' action=''>
+        {{ form.hidden_tag() }}
+        <br>
+        {{ form.title.label }} {{ form.title }}
+        <br><br>
+        {{ form.author_name.label }} {{ form.author_name }}
+        <br><br>
+        {{ form.name.label }} {{ form.name }}
+        <br><br>
+        {{ form.description.label }} {{ form.description }}
+        <br><br>
+        {{ form.finished.label }} {{ form.finished }}
+        <br>
+        {% if form.title.errors %}
+            {% for error in form.title.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+        {% if form.author_name.errors %}
+            {% for error in form.author_name.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+        {% if form.name.errors %}
+            {% for error in form.name.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+        {% if form.description.errors %}
+            {% for error in form.description.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+        <br>
+        {{ form.submit }}
+    </form>
+</div>
+{% endblock body %}
