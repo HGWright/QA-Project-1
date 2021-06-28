@@ -151,18 +151,9 @@ To wrap up the front end, this is where large quality of life improvments could 
 
 ### Jenkins and automated testing
 
-As mentioned in the testing section we can use Jenkins to run out pytest commands and perform our tests for us. We can use a webhook to connect out github repository to our jenkins build, therefore we can set jenking to run our tests whenever we push new changes up to GitHub
+Jenkins is a automating server that is very useful when trying to set up Continous Integration (CI), it was not within to scope of this project to fully set up continous integration. By linking to Jenkins and setting up a task we are able to build part of the CI Pipeline for software development. 
 
-
-
-
-
-
-
-
-
-
-
+As mentioned in the testing section we can use Jenkins to run out pytest commands and perform our tests for us. We can use a webhook to connect out github repository to our jenkins build, therefore we can set jenking to run our tests whenever we push new changes up to GitHub repository.
 
 ### Authors
 
