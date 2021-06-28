@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Henry's Library</title>
+    </head>
+    <body>
+        <h1>Henry's Library</h1>
+        <a href="{{ url_for('home') }}">Home Page</a>
+        &nbsp;&nbsp;
+        <a href="{{ url_for('add_new_book') }}">Add a new book</a>
+        <br><br>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
