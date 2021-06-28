@@ -26,4 +26,6 @@ Below you can see a detailed risk assessment. I have considered a number of risk
 
 Here is a link to my trello board, using user stories and the AGILE framework I have created and completes a Sprint Backlog to meet all of the requirements of the MVP.
 
+![Trello Board](C:\Users\bbqfe\Pictures/TrelloBoard.PNG)
+
 [Trello Board](https://trello.com/b/68gLnA9e/fundamentl-project-board)
